@@ -1,4 +1,5 @@
-    .head_logo{
+    @import '../../style/mixin.scss';
+	.head_logo{
         left: 0.4rem;
         font-weight: 400;
         @include sc(0.7rem, #fff);

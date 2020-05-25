@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import {hotcity, groupcity} from '../../service/index.js';
-// import'./index.scss';
+import './index.css';
 export default class Home extends React.Component {
 	constructor(props) {
 	    super(props);
@@ -45,13 +45,13 @@ export default class Home extends React.Component {
 		return (
 			<div>
 				<section id="hot_city_container">
-					<h4 className="city_title">热门城市</h4>
-					<ul className="citylistul clear">
+					<h4 className='city_title'>热门城市</h4>
+					<ul className='citylistul' >
 						{
 							this.state.hotcity.map((item,i)=>{
 								return (
-								 <li key={i}>
-									<Link  to={{ pathname: ' /city/'+item.id }}>
+								 <li key={i}  style={{color:'blue'}}>
+									<Link  to={{ pathname: 'city/'+item.id }}>
 									   <span>{item.name}</span>
 									</Link>
 								</li>
@@ -60,21 +60,21 @@ export default class Home extends React.Component {
 						}
 					</ul>
 				</section>
-				<section className="group_city_container">
-				    <ul className="letter_classify">
+				<section className='group_city_container'>
+				    <ul className='letter_classify'>
 					    {
 							Object.keys(this.state.groupcity).map((key,i)=>{
 								return (
-									<li key={i} >
-										<h4 className="city_title">
+									<li key={i} className='letter_classify_li'>
+										<h4 className='city_title'>
 											{key}
 										</h4>
-										<ul>
+										<ul className='groupcity_name_container citylistul clear' >
 											{
 												this.state.groupcity[key].map((item,ii)=>{
 													return (
-													 <li key={ii}>
-														<Link  to={{ pathname: ' /city/'+item.id }}>
+													 <li key={ii} className='ellipsis'>
+														<Link  to={{ pathname: '/city/'+item.id }}>
 														   <span>{item.name}</span>
 														</Link>
 													</li>

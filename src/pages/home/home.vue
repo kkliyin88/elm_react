@@ -1,8 +1,5 @@
 <template>
   	<div>
-        <head-top signin-up='home'>
-            <span slot='logo' class="head_logo"  @click="reload">ele.me</span>
-        </head-top>
         <nav class="city_nav">
             <div class="city_tip">
                 <span>当前定位城市：</span>
@@ -37,19 +34,6 @@
                 </li>
             </ul>
 			
-			<!-- <ul>
-				{
-					this.state.groupcity[key].map((item,ii)=>{
-						return (
-						 <li key={ii}>
-							<Link  to={{ pathname: ' /city/'+item.id }}>
-							   <span>{item.name}</span>
-							</Link>
-						</li>
-						)
-					})
-				}
-			</ul> -->
         </section>
     </div>
 </template>
