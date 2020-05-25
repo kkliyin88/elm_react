@@ -8,7 +8,7 @@ import { HashRouter, Route } from 'react-router-dom'
 // import Contacts from './pages/contacts/index.jsx';
 import Home from './pages/home/index.jsx';
 import About from './pages/about/index.jsx';
-// import './style/common.scss' // 公共的css
+import './style/common.scss' // 公共的css
 // import store from './redux/store';
 
 export default class App extends React.Component {

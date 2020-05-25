@@ -1,7 +1,8 @@
 //home.js
 import React from 'react';
 import { Link } from 'react-router-dom'
-import {hotcity, groupcity} from '../../service/index.js'
+import {hotcity, groupcity} from '../../service/index.js';
+// import'./index.scss';
 export default class Home extends React.Component {
 	constructor(props) {
 	    super(props);
