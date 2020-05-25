@@ -1,0 +1,43 @@
+
+body{
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  }
+  #app{
+   
+    overflow-x: hidden;
+  }
+  .main_wrap{
+    padding: 200px 8% 300px;
+    background: #f5f5f5;
+    overflow-y: scroll;
+  }
+  .pointer{
+      cursor: pointer;
+  }
+  
+  /*IE滚动条颜色*/
+  html {
+      scrollbar-face-color:#bfbfbf; /*滚动条颜色*/
+      /* scrollbar-highlight-color:#000; */
+      /* scrollbar-3dlight-color:#000; */
+      /* scrollbar-darkshadow-color:#000; */
+      scrollbar-Shadow-color:#adadad;
+      /* scrollbar-arrow-color:rgba(0,0,0,0.4); */
+      scrollbar-track-color:#eeeeee;
+  }
+  
+  
+  
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    list-style: none;
+  }
+  .wrap{
+      padding: 0 50px;
+  }
+  .align_center{
+      text-align: center;
+  }
